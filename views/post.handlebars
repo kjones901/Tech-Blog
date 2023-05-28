@@ -1,9 +1,39 @@
 {{!-- need to think about adding comments to posts. That goes here possibly? --}}
-<div>
+{{!-- <div>
   <h2>{{title}}</h2>
   <p>Written by {{user.name}} on {{format_date date_created}}</p>
   <p>{{content}}</p>
+  {{#each comments as |comment|}}
+  <p>{{comment.response}}</p>
+  <p>Written by {{comment.user.name}} on {{format_date date_created}}</p>
+  {{/each}}
   <p>
     <button class="btn"> Add Comment</button>
   </p>
+</div> --}}
+<div class="row">
+  <div class="col-auto">
+{{>postInfo}}
+  </div>
 </div>
+
+<div class="row">
+  <div class="col-md-6 mt-5">
+    {{#each comments as |comment|}}
+      <div class="card pt-3 pl-2">
+      <p>{{comment.response}}</p>
+        <p class="author">{{comment.user.name}} ({{format_date date_created}})</p>
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="col-md-6">
+    <form class="form new-comment-form">
+      <label for="comment-desc"><h4>Comment</h4></label>
+      <textarea class="form-input" id="comment-desc" name="comment-desc"></textarea>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/post.js"></script>
