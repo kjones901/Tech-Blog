@@ -1,10 +1,12 @@
 [
     {
-        "title": "Coding 101",
-        "content": "To learn to code you first need a computer."
+        "title": "Sequelize",
+        "content": "Sequelize is great. Still learning it but I like using their models.",
+        "user_id": 1
     },
     {
-        "title": "Coding 102",
-        "content": "Once you have a computer, you need to know how to use it."
+        "title": "MVC",
+        "content": "This seems like a great way to organize your website build",
+        "user_id": 3
     }
 ]

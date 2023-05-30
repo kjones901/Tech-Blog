@@ -1,17 +1,17 @@
 [
     {
-        "response": "test comment",
-        "post_id": 1,
-        "user_id": 1
-    },
-    {
-        "response": "test comment 2",
-        "post_id": 1,
-        "user_id": 1
-    },
-    {
-        "response": "test comment 3",
+        "response": "Yeah, definetily.",
         "post_id": 1,
         "user_id": 2
+    },
+    {
+        "response": "I agree.",
+        "post_id": 1,
+        "user_id": 3
+    },
+    {
+        "response": "I think so too! I want to start using it more.",
+        "post_id": 2,
+        "user_id": 1
     }
 ]
