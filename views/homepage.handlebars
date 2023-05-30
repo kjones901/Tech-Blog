@@ -1,21 +1,6 @@
-{{!-- {{#each posts as |post| }}
-<div class="card row mb-4 p-3 align-center" >
-  <div class="col-md-5">
-    <h3>
-      <a href="/post/{{post.id}}">{{post.title}}</a>
-    </h3>
-    <p>Created by {{post.user.name}} on {{format_date post.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{post.content}}
-    </p>
-  </div>
-</div>
-{{/each}} --}}
 {{#each posts as |post| }}
 <div class="card row mb-4 p-2 align-center" >
-  <div class="col-md-5">
+  <div class="col-auto">
     {{> postInfo}}
     </p>
   </div>
